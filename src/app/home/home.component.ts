@@ -1,43 +1,44 @@
-import { Component, OnInit } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import { Directive, Component, OnInit } from '@angular/core';
+import { TimelineMax } from 'gsap';
+import { Back } from 'gsap';
+declare var $:any
 
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
-    animations: [
-        trigger('fadeInOut',[
-            state('void', style({
-                opacity: 0
-            })),
-            transition('void <=> *', animate(1000)),
-        ])
-    ]
 })
 
 export class HomeComponent implements OnInit {
-    model = {
-        left: true,
-        middle: false,
-        right: false
-    };
-
-    focus: any;
-    focus1: any;
-
-    subHeaders = [
-        'Discover the Best Beauty Deals',
-         'Find Beauty Deals, Whenever, Wherever',
-         'Where Girl Meets Beauty Fairy Godmother'
-    ];
     
-    number = 0;
-    sub = this.subHeaders[this.number];
     constructor() {
      }
 
     ngOnInit() {
-       
+      $(document).ready(function() {
+        $(".splash-title").lettering();
+        $(".splash-button").lettering();
+      });
+      
+      $(document).ready(function() {
+          animation();
+      }, 1000);
+      
+      $('.splash-button').click(function() {
+          animation();
+      });
+      
+      
+      function animation() {
+          var title1 = new TimelineMax();
+          title1.to(".splash-button", 0, {visibility: 'hidden', opacity: 0})
+          title1.staggerFromTo(".splash-title span", 0.5, 
+          {ease: Back.easeOut.config(1.7), opacity: 0, bottom: -80},
+          {ease: Back.easeOut.config(1.7), opacity: 1, bottom: 0}, 0.05);
+          title1.to(".splash-button", 0.2, {visibility: 'visible' ,opacity: 1})
+      }
+      
+    
     }
     
 }

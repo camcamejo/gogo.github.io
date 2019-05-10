@@ -13,7 +13,6 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
-
 import { HomeModule } from './home/home.module';
 
 @NgModule({
@@ -24,7 +23,7 @@ import { HomeModule } from './home/home.module';
     LandingComponent,
     AboutComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
