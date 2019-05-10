@@ -5,26 +5,6 @@ $green: #2b9f5e;
 $yellow: #f1c83c;
 $shadow: #533d4a;
 
-.splash-button{
-  float: left;
-  position: relative;
-  bottom: -65px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-10deg);
-  color: $red;
-  text-transform: uppercase;
-  opacity: 0;
-  visibility: hidden;
-  cursor: pointer;
-  text-shadow:  $shadow 1px 1px, $shadow 2px 2px, $shadow 3px 3px, $shadow 4px 4px !important;
-  
-  span{
-    transform: skew(-10deg);
-    display: block;
-    float: left;
-    }
-}
-
 h1{
   color: #fff;
   text-transform: uppercase;
@@ -53,6 +33,7 @@ h1{
   }
 }
 
+
 .end-left{
   margin-left: -235px;
 }
@@ -61,3 +42,168 @@ h1{
   margin-right: -117.5px;
 }
 
+.color1{
+  background-color: #ED9B17
+}
+
+#deals{
+  padding: 70px 0 0 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin: 0;
+    line-height: 80px;
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  /* Add your custom styles here for Tablet */
+}
+@media only screen and (max-width: 640px) {
+  h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0;
+    line-height: 40px;
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* Add your custom styles here for smaller Mobile */
+}
+
+/* Circle Grid*/
+
+ul.splash {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  grid-template-rows: repeat(auto-fill, 220px);
+  grid-template-columns: repeat(auto-fill, 220px);
+  grid-gap: 10px;
+  min-width: 480px;
+  list-style: none;
+}
+
+li.splash{
+  display: inline-block;
+  margin: 2px 0;
+}
+
+li.small-splash {
+  // width: 25px;
+  // height: 25px;
+  background-color: palegreen;
+  border-radius: 50%;
+  grid-row: auto / span 1;
+  grid-column: auto / span 1;
+  margin: 2px 0;
+  display: inline;
+  img {
+    height: 10%;
+    width: 10%;
+  }
+}
+
+li.big-splash {
+  margin: 0;
+  width: 460px;
+  height: 460px;
+  background-color: black;
+  border-radius: 50%;
+  grid-row: auto / span 2;
+  grid-column: auto / span 2;
+}
+li.splash {
+  display: block;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+}
+
+.circle-icon1 {
+  background: url('/src/assets/img/faces/category-nail2.png');
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-color: #ffc0c0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 0px;
+}
+
+.circle-icon2 {
+  background: url('/src/assets/img/faces/category-hair2.png');
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-color: #ffc0c0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 0px;
+}
+
+.circle-icon3 {
+  background: url('/src/assets/img/faces/category-makeup.svg');
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-color: #ffc0c0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 0px;
+}
+
+.circle-icon4 {
+  background: url('/src/assets/img/faces/category-barber4.png');
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-color: #ffc0c0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 0px;
+}
+
+
+.circle-icon5 {
+  background: url('/src/assets/img/faces/spa.svg');
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-color: #ffc0c0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  padding: 0px;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}

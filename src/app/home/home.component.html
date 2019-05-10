@@ -9,60 +9,102 @@
             <link href='https://fonts.googleapis.com/css?family=Noto+Serif:700,700italic' rel='stylesheet' type='text/css'>
             <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
     </head>
-<div class="page-header" data-parallax="true">
-    <div class="col-md-4">
-        <div class="card cropped" style="overflow: hidden">
-                <img src="./assets/img/faces/nails.png" alt="Avatar">
-                <div class="container">
-                <h4><b>Nails</b></h4> 
-                <p>Free Mani/Pedi w/ purchase</p> 
-                </div>
-        </div>
-    </div>
-    <div class="col-md-8">
+<div class="page-header color1" data-parallax="true">
+    <div class="text-center">
         <div class="container">
                 <h1 style="text-align: center">
                     <span class="splash-title">Girlfriend</span>
                     <span class="splash-title">on the</span>
                     <span class="splash-title">GO</span>
                 </h1>
-                <br />
-                <div class="splash-button">restart</div>
         </div>
     </div>
 </div>
 <div class="main">
-    <div class="section text-center">
+    <div class="section text-center" id="deals">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 mr-auto ml-auto">
-                    <div class="card page-carousel">
-                        <ngb-carousel>
-                            <ng-template ngbSlide>
-                                <img src="./assets/img/soroush-karimi.jpg" alt="Random first slide">
-                                <div class="carousel-caption">
-                                    <p>Somewhere</p>
-                                </div>
-                            </ng-template>
-                            <ng-template ngbSlide>
-                                <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
-                                <div class="carousel-caption">
-                                    <p>Somewhere else</p>
-                                </div>
-                            </ng-template>
-                            <ng-template ngbSlide>
-                                <img src="./assets/img/joshua-stannard.jpg" alt="Random third slide">
-                                <div class="carousel-caption">
-                                    <p>Here it is</p>
-                                </div>
-                            </ng-template>
-                        </ngb-carousel>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="card">
+                            <img src="./assets/img/faces/nails.jpg" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>Star Nails</b></h4> 
+                                <h3>Queens, NY</h3>
+                                <p>20% OFF Mani/Pedi</p> 
+                            </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="card">
+                            <img src="./assets/img/faces/hairdresser.jpg" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>One Beauty</b></h4> 
+                                <h3>New York, NY</h3>
+                                <p><s>$75</s> $49 Blowout <mark>35% off</mark></p> 
+                            </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="card">
+                            <img src="./assets/img/faces/barber.jpg" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>Best Cuts</b></h4> 
+                                <h3>Brooklyn, NY</h3>
+                                <p>BOGO Hair Cuts</p> 
+                            </div>
+                    </div>    
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="card">
+                            <img src="./assets/img/faces/spa.jpg" alt="Avatar" style="width:100%">
+                            <div class="container">
+                                <h4><b>Himilayan Spa Co.</b></h4> 
+                                <h3>Long Island, NY</h3>
+                                <p>$100 massage + acupuncture</p> 
+                            </div>
                     </div>
                 </div>
             </div>
+            <h3 class="title" style="text-transform: uppercase">Categories</h3>
+            <div class="row">
+                    <div class="table">
+                <ul style="padding: 0;">
+                    <a [routerLink]="['/deals']">
+                        <li style="display: inline-block; padding: 0 10px;">
+                            <div class="circle-icon1">
+                            </div>
+                        </li>
+                    </a>
+                    <a [routerLink]="['/deals']">
+                        <li style="display: inline-block; padding: 0 10px;">
+                            <div class="circle-icon2">
+                            </div>
+                        </li>
+                    </a>
+                    <a [routerLink]="['/deals']">
+                        <li style="display: inline-block; padding: 0 10px;">
+                            <div class="circle-icon3">
+                            </div>
+                        </li>
+                    </a>
+                    <a [routerLink]="['/deals']">
+                        <li style="display: inline-block; padding: 0 10px;">
+                            <div class="circle-icon4">
+                            </div>
+                        </li>
+                    </a>
+                    <a [routerLink]="['/deals']">
+                        <li style="display: inline-block; padding: 0 10px;">
+                            <div class="circle-icon5">
+                            </div>
+                        </li>
+                    </a>
+                    </ul>
+                    </div>
+            </div>
         </div>
     </div>
-    <div class="section text-center">
+    <div class="section text-center" id="deals">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 mr-auto ml-auto">
@@ -116,7 +158,7 @@
         </div>
     <div class="section subtitles-div">
     </div>
-<div class="section section-dark text-center">
+<div class="section section-dark text-center" id="deals">
     <div class="container">
         <h2 class="title">Let's talk about us</h2>
         <div class="row">
@@ -171,7 +213,7 @@
     </div>
 </div>
 
-    <div class="section landing-section">
+    <div class="section landing-section" id="deals">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mr-auto ml-auto">
@@ -200,7 +242,7 @@
                         <label>Message</label>
                         <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
                         <div class="row">
-                            <div class="col-md-4 mr-auto ml-auto">
+                            <div class="col-md-4 mr-auto ml-auto text-center">
                                 <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
                             </div>
                         </div>
